@@ -1,0 +1,24 @@
+﻿<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading clearfix">
+            <h3 class="panel-title"><i class="fa fa-book"></i> Log </h3>           
+        </div>
+
+        <div class="panel-body default-height">
+            <div class="col-md-6">
+                <div class="table-responsive"> 
+                    
+                    Your IP: {{Ip}}
+                    <br /><br />
+                    <table class="table table-striped shortMargin">
+                        <tbody>
+                            <tr ng-repeat="log in LogDetails">
+                                <td width="190">{{log.Name }}</td>
+                                <td width="120">{{log.Country}}</td>                                
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
