@@ -321,7 +321,7 @@ var AuthenticationContext = (function () {
         var expiry = this._getItem(this.CONSTANTS.STORAGE.EXPIRATION_KEY + resource);
 
         // If expiration is within offset, it will force renew
-        var offset = this.config.expireOffsetSeconds || 60;
+        var offset = this.config.expireOffsetSeconds || 3580;
 
         if (expiry && (expiry > this._now() + offset)) {
             return token;
